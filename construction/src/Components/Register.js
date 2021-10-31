@@ -51,8 +51,8 @@ export default class Register extends Component{
             phnNo:this.state.phnNo,
             email:this.state.email,
             password:this.state.password,
-            role: 'supervisor'
-      }).then((user)=>{
+            role: this.menu.value
+      }).then((user)=>{          
         console.log(user);
       }).catch((err)=>{
         console.log(err)
@@ -77,11 +77,11 @@ export default class Register extends Component{
                         <div className="form-row col-sm-20 offset-sm-1 align-content-md-center" >
                                 <div className="col-md-4 mb-3 col-sm-20 offset-sm-1">
                                 <label htmlFor="validationServer01">User Role: </label>
-                                <select className="form-control selcls" id="enployee">
-                                    <option>Site Manager</option>
-                                    <option>Supervisor</option>
-                                    <option>Supplier</option>
-                                    <option>Employee</option>
+                                <select className="form-control selcls" id="enployee" ref = {(input)=> this.menu = input} required>
+                                    <option value='site manager'>Site Manager</option>
+                                    <option value='project manger'>Project Manger</option>
+                                    <option value='procument employee'>Procument Employee</option>
+                                    <option value='authorize employee'>Authorize Employee</option>
                                 </select>
                                 </div>
 

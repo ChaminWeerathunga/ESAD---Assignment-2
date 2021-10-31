@@ -25,7 +25,7 @@ export default class extends Component{
                         <li><NavLink to={'/ViewPurchaseOrder'}>VIEW PURCHACE ORDER</NavLink></li>
                         <li><NavLink to={'/SendSupplier'}>SEND PURCHASE ORDERS</NavLink></li>
                         <li><NavLink to={'/CreatePurchaceOrder'}>APPROVAL REQUISITIONS</NavLink></li>
-                        <li><a href="#">INVENTORY DETAILS</a></li>
+                        {/* <li><a href="#">INVENTORY DETAILS</a></li> */}
                     </ul>
                     <div className="p-3">
                         <Link to={'/Home'} className="btn btn-outline-danger btn-sm col-sm-20 align-content-md-center">LOG OUT </Link>

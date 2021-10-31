@@ -59,9 +59,9 @@ export default class extends Component{
             console.log(this.state.password);
             if(this.state.username==='sitemanager'&&this.state.password==='sitemanager') {
                 return <Redirect to={'SiteManagerHome'}/>
-            }else if(this.state.username==='supervisor' && this.state.password==='supervisor'){
+            }else if(this.state.username==='projectmanager' && this.state.password==='projectmanager'){
                 return <Link to={'/SupervisorHome'}/>
-            }else if(this.state.username==='suppiler' && this.state.password==='suppiler') {
+            }else if(this.state.username==='procumentstaff' && this.state.password==='procumentstaff') {
                return<Link to={'/SupplierHome'}/>
             }else if(this.state.username==='employee' && this.state.password==='employee') {
                return <Link to={'/AuthzEmployeeHome'}/>
